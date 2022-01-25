@@ -104,6 +104,7 @@ class Account:
     def WithdrawMoney(self,amount):
         if(int(self.balance) - amount < 0):
             print("You do not have enough balance.")
+            print("----------------------------------------------")
             backmenu = input("Press 1 to Go to the menu\nPress 2 to exit\nPress: ")
             if backmenu == "1":
                 account.Menu()
